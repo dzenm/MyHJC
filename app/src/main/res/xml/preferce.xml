@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="颜色设置">
+        <ListPreference
+            android:entries="@array/color_select"
+            android:entryValues="@array/color_value"
+            android:key="color_note"
+            android:summary="修改笔记页面内容背景颜色"
+            android:title="笔记颜色" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="背景设置">
+        <PreferenceScreen
+            android:key="bg_note"
+            android:summary="修改笔记页面ToolBar背景图片"
+            android:title="笔记背景" />
+        <PreferenceScreen
+            android:key="bg_diary"
+            android:summary="修改日记背景图片"
+            android:title="日记背景" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="其他设置">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sendMessage"
+            android:summaryOff="关闭"
+            android:summaryOn="打开"
+            android:title="接收推送" />
+        <PreferenceScreen
+            android:key="data_output"
+            android:summary="数据导出到SD卡根目录"
+            android:title="数据导出" />
+        <PreferenceScreen
+            android:key="data_input"
+            android:summary="数据从SD卡导入"
+            android:title="数据导入" />
+
+        <PreferenceScreen
+            android:summary="1.0"
+            android:title="当前版本" />
+        <PreferenceScreen android:title="关于应用" />
+        <PreferenceScreen
+            android:summary=""
+            android:title="作者博客" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

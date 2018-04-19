@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MyHjc</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="time_axis">若问闲情都几许</string>
+    <string name="memo">云想衣裳花想容</string>
+    <string name="note">赌书消得泼茶香</string>
+    <string name="setting">设置</string>
+    <string name="logout">注销</string>
+
+    <string name="cancle">取消</string>
+    <string name="commit">确定</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="float_behaver">com.din.myhjc.utils.FloatBehave</string>
+
+    <string name="user_text">账号</string>
+    <string name="user_edit">请输入用户名</string>
+    <string name="password_text">密码</string>
+    <string name="password_edit">请输入密码</string>
+    <string name="phone_text">手机</string>
+    <string name="phone_edit">请输入手机号</string>
+    <string name="email_text">邮箱</string>
+    <string name="email_edit">请输入邮箱</string>
+    <string name="register_text">注册</string>
+    <string name="send_message">发送验证码</string>
+    <string name="message_text">请输入验证码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="user_phone_email">用户名/手机号/邮箱</string>
+    <string name="login">登录</string>
+
+    <string name="add">添加</string>
+    <string name="content">内容</string>
+    <string name="title">标题</string>
+    <string name="weather">天气</string>
+    <string name="mood">心情</string>
+    <string name="location">定位</string>
+    <string name="week_view">周视图</string>
+    <string name="not_login">未登录</string>
+
+    <string name="enter_now">立即进入</string>
+
+</resources>

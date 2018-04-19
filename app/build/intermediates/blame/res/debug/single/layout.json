@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_memo.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_memo.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/diary_fragment.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/diary_fragment.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_note.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_note.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_note.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_add_note.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/drawer_main.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/drawer_main.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_setting.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_setting.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_guide.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_guide.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_main.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_add.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_diary.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_diary.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_start.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_start.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_table.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_table.xml"
+    }
+]

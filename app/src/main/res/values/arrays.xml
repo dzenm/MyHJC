@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex_name">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="sex_value">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+
+    <string-array name="color_select">
+        <item>红色</item>
+        <item>粉红色</item>
+        <item>紫色</item>
+        <item>深紫色</item>
+        <item>深蓝色</item>
+        <item>蓝色</item>
+        <item>靛蓝色</item>
+        <item>淡蓝色</item>
+        <item>青色</item>
+        <item>蓝绿色</item>
+        <item>绿色</item>
+        <item>浅绿色</item>
+        <item>石灰色</item>
+        <item>黄色</item>
+        <item>琥珀色</item>
+        <item>橙色</item>
+        <item>深橙色</item>
+        <item>棕色</item>
+        <item>灰色</item>
+        <item>蓝灰色</item>
+        <item>白蓝色</item>
+    </string-array>
+
+    <string-array name="color_value">
+        <item>#F44336</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#0288D1</item>
+        <item>#00a9df</item>
+        <item>#3F51B5</item>
+        <item>#03A9F4</item>
+        <item>#00BCD4</item>
+        <item>#009688</item>
+        <item>#4CAF50</item>
+        <item>#8BC34A</item>
+        <item>#CDDC39</item>
+        <item>#FFEB3B</item>
+        <item>#FFC107</item>
+        <item>#FF9800</item>
+        <item>#FF5722</item>
+        <item>#795548</item>
+        <item>#9E9E9E</item>
+        <item>#607D8B</item>
+        <item>#B3E5FC</item>
+    </string-array>
+</resources>
