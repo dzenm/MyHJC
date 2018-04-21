@@ -5,7 +5,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -25,7 +25,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_design_snackbar_background.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable/design_snackbar_background.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_bmob_update_button_ok_bg_focused.xml.flat",
@@ -57,7 +57,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -69,15 +69,15 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color_design_error.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/color/design_error.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/color/design_error.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item_separator.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_item_separator.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_snackbar.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_layout_snackbar.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -109,7 +109,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_bottom_sheet_dialog.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_bottom_sheet_dialog.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -117,7 +117,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_menu.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_menu.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -133,7 +133,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -217,7 +217,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_tab_icon.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_layout_tab_icon.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -265,7 +265,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_design_password_eye.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-v21/design_password_eye.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-v21/design_password_eye.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color_switch_thumb_material_light.xml.flat",
@@ -281,11 +281,11 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_avd_hide_password.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-v21/avd_hide_password.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-v21/avd_hide_password.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_bmob_update_btn_check_on_focused_holo_light.png.flat",
@@ -293,7 +293,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_text_input_password_icon.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_text_input_password_icon.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_text_input_password_icon.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -325,7 +325,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_design_fab_background.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable/design_fab_background.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -349,7 +349,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-mdpi-v4/design_ic_visibility_off.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-mdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color-v23_abc_tint_edittext.xml.flat",
@@ -501,7 +501,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_tooltip_frame_light.xml.flat",
@@ -525,7 +525,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_menu_item.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_menu_item.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -577,7 +577,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_tab_text.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_layout_tab_text.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_layout_tab_text.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -585,7 +585,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xhdpi-v4/design_ic_visibility.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -729,7 +729,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -813,7 +813,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-v21/design_bottom_navigation_item_background.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_abc_action_bar_up_container.xml.flat",
@@ -829,7 +829,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -913,7 +913,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-hdpi-v4/design_ic_visibility.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-hdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color_abc_btn_colored_borderless_text_material.xml.flat",
@@ -933,7 +933,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item_subheader.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_item_subheader.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -1029,7 +1029,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_menu_item_action_area.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_menu_item_action_area.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1037,7 +1037,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-mdpi-v4/design_ic_visibility.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-mdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1133,7 +1133,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/anim_design_snackbar_in.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/anim/design_snackbar_in.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/anim/design_snackbar_in.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1161,11 +1161,11 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color_design_tint_password_toggle.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/color/design_tint_password_toggle.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/color/design_tint_password_toggle.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1193,7 +1193,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item_header.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_item_header.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -1221,7 +1221,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-anydpi-v21/design_ic_visibility.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1245,7 +1245,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_avd_show_password.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-v21/avd_show_password.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-v21/avd_show_password.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_abc_btn_borderless_material.xml.flat",
@@ -1281,7 +1281,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/animator-v21/design_appbar_state_list_animator.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/animator-v21/design_appbar_state_list_animator.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1389,7 +1389,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_layout_snackbar_include.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_layout_snackbar_include.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color_abc_hint_foreground_material_light.xml.flat",
@@ -1401,7 +1401,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_navigation_empty_icon.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable/navigation_empty_icon.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable/navigation_empty_icon.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1437,7 +1437,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_navigation_item.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_navigation_item.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1445,7 +1445,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-xxhdpi-v4/design_ic_visibility.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -1589,11 +1589,11 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/drawable-hdpi-v4/design_ic_visibility_off.png"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/drawable-hdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/anim/design_snackbar_out.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable_bmob_update_button_cancel_bg_selector.xml.flat",
@@ -1709,7 +1709,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/layout_design_bottom_navigation_item.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/layout/design_bottom_navigation_item.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1717,7 +1717,7 @@
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/color-v23_design_tint_password_toggle.xml.flat",
-        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/color-v23/design_tint_password_toggle.xml"
+        "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/color-v23/design_tint_password_toggle.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",

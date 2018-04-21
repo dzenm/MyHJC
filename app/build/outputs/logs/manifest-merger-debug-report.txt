@@ -6,19 +6,19 @@ INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidMani
 INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/097e47914cccfc39811f30309925a3e9/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/264757c3142cb6dfa3629426767cb34b/AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/769b5c788761d361454ae789f5ef60cb/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/AndroidManifest.xml:17:1-31:12
 MERGED from [cn.bmob.android:bmob-sdk:3.5.8] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/bmob-sdk-3.5.8.aar/546b09eba33aa0fbedf84508093c27db/AndroidManifest.xml:2:1-16:12
@@ -111,8 +111,8 @@ ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifes
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:39:22-81
 application
 ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:41:5-71:19
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/AndroidManifest.xml:25:5-29:19
@@ -121,22 +121,22 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dinz
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/769b5c788761d361454ae789f5ef60cb/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/AndroidManifest.xml:25:5-29:19
@@ -229,8 +229,8 @@ MERGED from [com.android.databinding:adapters:1.3.1] /Users/dinzhenyan/.gradle/c
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/097e47914cccfc39811f30309925a3e9/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:library:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/264757c3142cb6dfa3629426767cb34b/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:library:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/264757c3142cb6dfa3629426767cb34b/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:21:5-23:62
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/AndroidManifest.xml:21:5-23:78
@@ -239,22 +239,22 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dinz
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/769b5c788761d361454ae789f5ef60cb/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/AndroidManifest.xml:21:5-23:58
@@ -268,7 +268,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dinzhenyan/.gradle/cac
 INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
@@ -278,33 +278,35 @@ INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidMani
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:cardview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.1.0.aar/317cc9df7e8525ce040b57d3aac8a26f/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/f75114a2c58179259762cc2a6090d31d/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/d8396fc732e6db731d200c770d1b7817/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/b611f966e5d7dda8006d53cfee101fdc/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/999874a44c4966d149302212479ed370/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/236184d866f79b381a8ac5d94b81598d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a5266cd22a91f80d8ed976808693996f/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/9598a470e56b4b0b4515bc9e033c926f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/21a3cdd510fdf5f6253ede1c961768b5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/198e53dd07a518c21446554c36a27e8d/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/79a44dd1f8e2b388c4c502a277c8a7e8/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:27:13-51
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/072d0ae60d2d329899764dbc21841f0c/AndroidManifest.xml:25:9-27:47
 	android:value

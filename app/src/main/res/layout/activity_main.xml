@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:openDrawer="start">
-
         <include layout="@layout/diary_fragment" />
 
         <android.support.design.widget.NavigationView

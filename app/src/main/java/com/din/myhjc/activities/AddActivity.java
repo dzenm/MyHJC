@@ -3,6 +3,7 @@ package com.din.myhjc.activities;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +13,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,6 +53,18 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bind = DataBindingUtil.setContentView(AddActivity.this, R.layout.activity_add);
+        //  使 contentView 延伸到 statusBar
+        Window window = getWindow();
+        //  状态栏透明
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        //  状态栏着色
+        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(Color.TRANSPARENT);
+        window.setNavigationBarColor(Color.TRANSPARENT);
         init();
     }
 
@@ -93,8 +108,6 @@ public class AddActivity extends AppCompatActivity {
     private void initUpdate() {
         //  更新页面ToolBar按钮和文本设置
         bind.confirm.setImageResource(R.drawable.btn_add);
-        bind.textTitle.setText("修改");
-
         //-------从主页面点击之后接收ID，从litepal读取该行数据显示
         Id = getIntent().getStringExtra("id");
         List<DataDiary> datas = DataSupport.where("id=?", Id).find(DataDiary.class);
@@ -366,16 +379,36 @@ public class AddActivity extends AppCompatActivity {
         }, 10000);
     }
 
-    //  使用recyclerView制作滑动的选择器
     private int[] id = null;
-    private int[] moodID = new int[]{R.drawable.mood_glad, R.drawable.mood_angry, R.drawable.mood_grieved, R.drawable.mood_surprised, R.drawable.mood_depressed};
-    private int[] weatherID = new int[]{R.drawable.weather_sunshine, R.drawable.weather_lunar, R.drawable.weather_rainy, R.drawable.weather_snow, R.drawable.weather_cloudy};
+    private int[] moodID = new int[]{
+            R.drawable.mood_00, R.drawable.mood_01, R.drawable.mood_02, R.drawable.mood_03, R.drawable.mood_04,
+            R.drawable.mood_10, R.drawable.mood_11, R.drawable.mood_12, R.drawable.mood_13, R.drawable.mood_14,
+            R.drawable.mood_20, R.drawable.mood_21
+    };
+    private int[] weatherID = new int[]{
+            R.drawable.weather_00, R.drawable.weather_01, R.drawable.weather_02, R.drawable.weather_13, R.drawable.weather_23,
+            R.drawable.weather_10, R.drawable.weather_11, R.drawable.weather_12, R.drawable.weather_13, R.drawable.weather_14,
+            R.drawable.weather_20, R.drawable.weather_21, R.drawable.weather_22, R.drawable.weather_23, R.drawable.weather_24};
+
     private String[] text = null;
-    private String[] moodText = new String[]{"高兴", "愤怒", "难过", "惊讶", "郁闷"};
-    private String[] weatherText = new String[]{"晴", "阴", "雨", "雪", "多云"};
+    private String[] moodText = new String[]{
+            "开心", "伤心", "笑哭", "受伤", "流汗",
+            "震惊", "眨眼", "天使", "思考", "懵逼",
+            "疲惫", "难过"
+    };
+    private String[] weatherText = new String[]{
+            "晴天", "多云", "阴天", "扬尘", "雾霾",
+            "小雨", "中雨", "大雨", "大风", "雷阵雨",
+            "小雪", "中雪", "大雪", "冰雹", "雨夹雪"
+    };
     private int number = 0;
     private String flag = null;
 
+    /**
+     * 使用recyclerView制作滑动的选择器
+     *
+     * @param data
+     */
     private void initData(String data) {
         bind.recyclerView.setVisibility(View.VISIBLE);
         bind.recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));

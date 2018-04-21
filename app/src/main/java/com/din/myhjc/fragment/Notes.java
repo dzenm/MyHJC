@@ -72,7 +72,6 @@ public class Notes extends Fragment {
         super.onStart();
 
         //  设置背景图片适应屏幕
-
         Bitmap bgBitmap = new FileUtil().readPhoto("Photo", "NoteBackgroung");
         if (bgBitmap != null) {
             bind.imageView.setImageBitmap(bgBitmap);

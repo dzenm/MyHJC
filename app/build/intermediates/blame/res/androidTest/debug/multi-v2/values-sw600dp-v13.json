@@ -4,7 +4,7 @@
             "outputFile": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/c87e4ce90bce3afe299eb211aeeb72e7/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

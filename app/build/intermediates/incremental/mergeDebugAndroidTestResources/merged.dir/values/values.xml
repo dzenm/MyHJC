@@ -129,8 +129,6 @@
     <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
     <color name="design_snackbar_background_color">#323232</color>
-    <color name="design_textinput_error_color_dark">#FFFF6E6E</color>
-    <color name="design_textinput_error_color_light">#FFD50000</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -197,7 +195,7 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable>
-    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/></declare-styleable>
+    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/><attr name="android:keyboardNavigationCluster"/><attr name="android:touchscreenBlocksFocus"/></declare-styleable>
     <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/></declare-styleable>
     <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
             
@@ -387,7 +385,7 @@
             
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
-    <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
+    <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="reference|color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
@@ -705,14 +703,19 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="dataBinding" type="id"/>
+    <item name="ghost_view" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
     <item name="onAttachStateChangeListener" type="id"/>
     <item name="onDateChanged" type="id"/>
+    <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
+    <item name="save_image_matrix" type="id"/>
+    <item name="save_non_transition_alpha" type="id"/>
+    <item name="save_scale_type" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
@@ -722,7 +725,9 @@
     <item name="title" type="id"/>
     <item name="transition_current_scene" type="id"/>
     <item name="transition_layout_save" type="id"/>
+    <item name="transition_position" type="id"/>
     <item name="transition_scene_layoutid_cache" type="id"/>
+    <item name="transition_transform" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
@@ -1129,6 +1134,9 @@
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">true</item>
+    </style>
+    <style name="Base.V14.Widget.Design.AppBarLayout" parent="android:Widget">
+        <item name="android:background">?attr/colorPrimary</item>
     </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
         <item name="windowNoTitle">false</item>
@@ -1853,9 +1861,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <style name="Base.Widget.Design.AppBarLayout" parent="android:Widget">
-        <item name="android:background">?attr/colorPrimary</item>
-    </style>
+    <style name="Base.Widget.Design.AppBarLayout" parent="Base.V14.Widget.Design.AppBarLayout"/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
         <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
         <item name="tabIndicatorColor">?attr/colorAccent</item>
@@ -2172,7 +2178,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Design" parent="Theme.AppCompat">
-        <item name="textColorError">@color/design_textinput_error_color_dark</item>
+        <item name="textColorError">?attr/colorError</item>
     </style>
     <style name="Theme.Design.BottomSheetDialog" parent="Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -2180,7 +2186,7 @@
         <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
     </style>
     <style name="Theme.Design.Light" parent="Theme.AppCompat.Light">
-        <item name="textColorError">@color/design_textinput_error_color_light</item>
+        <item name="textColorError">?attr/colorError</item>
     </style>
     <style name="Theme.Design.Light.BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
