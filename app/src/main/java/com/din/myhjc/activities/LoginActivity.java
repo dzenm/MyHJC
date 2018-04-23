@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.din.myhjc.R;
 import com.din.myhjc.broadcast.RegisterBroadcast;
 import com.din.myhjc.databinding.ActivityLoginBinding;
+import com.din.myhjc.utils.StatusBarUtils;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
@@ -38,21 +39,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
-        //  使 contentView 延伸到  statusBar
-        Window window = getWindow();
-        //  状态栏透明
-        window.clearFlags(
-                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                        | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        //  状态栏着色
-        window.getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(Color.TRANSPARENT);
-        window.setNavigationBarColor(Color.TRANSPARENT);
-
+        //  去除statusBar
+        StatusBarUtils.removeStatusBar(this);
         bind = DataBindingUtil.setContentView(this, R.layout.activity_login);
 
         //  记住账户密码
@@ -153,12 +141,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onEnd() {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
-    }
-
-    //  取消注册网络广播
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        broadcast.unregister(this);
     }
 }

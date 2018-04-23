@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/nav_header_height"
-        android:paddingLeft="30dp"
-        android:background="@color/MaterialWhiteBlue"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        android:orientation="vertical"
-        android:gravity="bottom">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/MaterialWhiteBlue"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/guide"
-            android:id="@+id/imageView"/>
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/headPhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/username"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="@string/not_login"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:textColor="@color/MaterialWhite"
-            android:id="@+id/username"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:padding="5dp"
+        android:text="@string/not_login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/MaterialWhite"
+        android:textSize="18sp" />
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:gravity="center"
-            android:layout_marginBottom="10dp"
-            android:text=""
-            android:textColor="@color/MaterialWhite"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:id="@+id/email"/>
-</LinearLayout>
+</RelativeLayout>

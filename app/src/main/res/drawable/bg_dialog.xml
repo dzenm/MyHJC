@@ -1,9 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 填充颜色 -->
-    <solid android:color="#FFFFFF" />
-    <corners
-            android:bottomLeftRadius="@dimen/radius_tweleve"
-            android:bottomRightRadius="@dimen/radius_tweleve"
-            android:topLeftRadius="@dimen/radius_tweleve"
-            android:topRightRadius="@dimen/radius_tweleve" />
-</shape>

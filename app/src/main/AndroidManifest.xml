@@ -51,6 +51,7 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -64,9 +65,13 @@
             android:name=".activities.AddActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".activities.AddNoteActivity" />
-        <activity android:name=".fragment.Memo"></activity>
+        <activity android:name=".fragment.Memo" />
+
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="4ea4e871f38cd10009d060a55f75f292" />
+
+        <activity android:name=".activities.ProfileActivity"></activity>
     </application>
+
 </manifest>

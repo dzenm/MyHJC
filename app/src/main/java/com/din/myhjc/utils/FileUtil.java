@@ -1,5 +1,6 @@
 package com.din.myhjc.utils;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
@@ -31,8 +32,8 @@ public class FileUtil {
      * @param folderName
      * @return
      */
-    public static String getFolder(String folderName) {
-        File file = new File(Environment.getExternalStorageDirectory().getPath() + "/MyHjc/" + folderName);
+    public static String getAppFolder(String folderName) {
+        File file = new File(Environment.getExternalStorageDirectory().getPath() + File.separator + "MyHjc" + File.separator + folderName);
         //  判断外部存储状态
         if (externalStatus()) {
             if (!file.exists()) {   //  如果该文件夹不存在，则进行创建
@@ -48,7 +49,7 @@ public class FileUtil {
      * @param bitmap
      */
     public static void savePhoto(Bitmap bitmap, String direct, String photoName) {
-        File file = new File(getFolder(direct), photoName + ".jpg");
+        File file = new File(getAppFolder(direct), photoName);
         FileOutputStream out = null;
         try {
             if (!file.isDirectory()) {
@@ -83,8 +84,8 @@ public class FileUtil {
      * @param photoName
      * @return Bitmap
      */
-    public Bitmap readPhoto(String direct, String photoName) {
-        String path = getFolder(direct) + "/" + photoName + ".jpg";
+    public static Bitmap readPhoto(String direct, String photoName) {
+        String path = getAppFolder(direct) + File.separator + photoName;
         if (path != null) {
             Bitmap bitmap = BitmapFactory.decodeFile(path);
             return bitmap;
@@ -94,29 +95,32 @@ public class FileUtil {
 
 
     /**
-     *  复制文件到SD卡
+     * 复制文件到SD卡
+     *
      * @param DATABASE_NAME 数据库名称
      */
-    public void copyDBToSDcrad(String DATABASE_NAME) {
+    public void copyDBToSDcrad(Activity activity, String DATABASE_NAME) {
 
-        String oldPath = "data/data/com.dinzhenyan.myhjc/databases/" + DATABASE_NAME + ".db";
+        String oldPath = activity.getDatabasePath(DATABASE_NAME + ".db").getPath();
         String newPath = Environment.getExternalStorageDirectory() + File.separator + DATABASE_NAME + ".db";
         copyFile(oldPath, newPath);
     }
 
     /**
-     *  复制文件到SD卡
+     * 复制文件到SD卡
+     *
      * @param DATABASE_NAME 数据库名称
      */
-    public void copySDcradToDB(String DATABASE_NAME) {
+    public void copySDcradToDB(Activity activity, String DATABASE_NAME) {
 
         String oldPath = Environment.getExternalStorageDirectory() + File.separator + DATABASE_NAME + ".db";
-        String newPath = "data/data/com.dinzhenyan.myhjc/databases/" + DATABASE_NAME + ".db";
+        String newPath = activity.getDatabasePath(DATABASE_NAME + ".db").getPath();
         copyFile(oldPath, newPath);
     }
 
     /**
-     *  复制文件
+     * 复制文件
+     *
      * @param oldPath
      * @param newPath
      */
@@ -144,5 +148,4 @@ public class FileUtil {
             e.printStackTrace();
         }
     }
-
 }

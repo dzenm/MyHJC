@@ -1,35 +1,25 @@
 package com.din.myhjc.activities;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
+import android.support.annotation.Size;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.amap.api.location.AMapLocation;
-import com.amap.api.location.AMapLocationClient;
-import com.amap.api.location.AMapLocationClientOption;
-import com.amap.api.location.AMapLocationListener;
 import com.din.myhjc.R;
 import com.din.myhjc.adapter.SingleAdapter;
 import com.din.myhjc.content.Single;
 import com.din.myhjc.databases.DataDiary;
 import com.din.myhjc.databinding.ActivityAddBinding;
-import com.din.myhjc.utils.ClearEditText;
 import com.din.myhjc.utils.DateUtil;
+import com.din.myhjc.utils.DiyDialogUtils;
+import com.din.myhjc.utils.LocationUtils;
+import com.din.myhjc.utils.StatusBarUtils;
 
 import org.litepal.crud.DataSupport;
 
@@ -53,23 +43,12 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bind = DataBindingUtil.setContentView(AddActivity.this, R.layout.activity_add);
-        //  使 contentView 延伸到 statusBar
-        Window window = getWindow();
-        //  状态栏透明
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        //  状态栏着色
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(Color.TRANSPARENT);
-        window.setNavigationBarColor(Color.TRANSPARENT);
+        StatusBarUtils.removeStatusBar(this);           //  去除statusBar
         init();
     }
 
     private void init() {
-        //  设置为toolbar,去掉标题
+        //  设置为toolbar
         setSupportActionBar(bind.toolbar);
         getSupportActionBar().setTitle("");
         //  初始化
@@ -101,7 +80,7 @@ public class AddActivity extends AppCompatActivity {
         //  设置当前时间的日期
         bind.date.setText(dateUtil.DateToSimple().substring(0, 10));
         bind.location.setText("定位中...");
-        startLocation();
+        new LocationUtils().startLocation(this, bind.location);
     }
 
     //  更新界面初始化
@@ -207,7 +186,7 @@ public class AddActivity extends AppCompatActivity {
                 initData("mood");
                 break;
             case R.id.location:
-                startLocation();
+                new LocationUtils().startLocation(this, bind.location);
                 break;
             default:
                 break;
@@ -234,13 +213,13 @@ public class AddActivity extends AppCompatActivity {
     public boolean onLongClick(View view) {
         switch (view.getId()) {
             case R.id.weather:
-                getInputDialog(bind.weather, "自定义天气");
+                DiyDialogUtils.getInputDialog(this, bind.weather, "自定义天气");
                 break;
             case R.id.mood:
-                getInputDialog(bind.mood, "自定义心情");
+                DiyDialogUtils.getInputDialog(this, bind.mood, "自定义心情");
                 break;
             case R.id.location:
-                getInputDialog(bind.location, "自定义地点");
+                DiyDialogUtils.getInputDialog(this, bind.location, "自定义地点");
                 break;
             default:
                 break;
@@ -248,135 +227,11 @@ public class AddActivity extends AppCompatActivity {
         return true;
     }
 
-    //  自定义输入
-    private void getInputDialog(TextView textView, String title) {
-        //  获取layout
-        LayoutInflater locationInflater = getLayoutInflater();
-        View dialog = locationInflater.inflate(R.layout.dialog_input, null);
-        //  获取控件ID
-        ClearEditText editText = (ClearEditText) dialog.findViewById(R.id.locationText);
-        editText.setText(textView.getText().toString());
-        TextView diyText = (TextView) dialog.findViewById(R.id.diyText);
-        diyText.setText(title);
-        //  弹出提示框
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                textView.setText(editText.getText().toString());
-            }
-        })
-                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                })
-                .setView(dialog);
-        builder.show();
-    }
-
     //  页面跳转
     private void startMainActivity() {
         Intent intent = new Intent(AddActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
-    }
-
-    //  获取天气
-//    private void showWeather(){
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    OkHttpClient client = new OkHttpClient();
-//                    Request request = new Request.Builder().url(url).build();
-//                    Response response = client.newCall(request).execute();
-//                    String result = response.body().string();
-//                    getWeather(result);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }).start();
-//    }
-//
-//    private void getWeather(final String data){
-//             try {
-//                    //  将所有数据放在一个jsonObject中
-//                    JSONObject jsonObject = new JSONObject(data);
-//                    //  取出为results的key
-//                    String results = jsonObject.getString("results");
-//                    //  该key对应的值是一个数组,因此使用数组存储
-//                    JSONArray jsonArray = new JSONArray(results);
-//                    //  取出json数组中json对象为0的下标
-//                    JSONObject second = jsonArray.getJSONObject(0);
-//                    //  取出key为now的值
-//                    JSONObject now = second.getJSONObject("now");
-//                    //  取出key为text的值
-//                    String text = now.getString("text");
-//                    bind.weather.setText(text);
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//            }
-//        });
-//    }
-
-
-    //  定位
-    private String city = null, direction = null;
-
-    private void startLocation() {
-        AMapLocationClient client = new AMapLocationClient(getApplicationContext());
-        AMapLocationClientOption option = new AMapLocationClientOption();
-        option.setLocationPurpose(AMapLocationClientOption.AMapLocationPurpose.SignIn);
-        option.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
-        option.setOnceLocation(true);
-        option.setNeedAddress(true);
-        option.setMockEnable(true);
-        option.setHttpTimeOut(10000);
-        option.setLocationCacheEnable(false);
-        AMapLocationListener listener = new AMapLocationListener() {
-            @Override
-            public void onLocationChanged(AMapLocation aMapLocation) {
-                if (aMapLocation != null) {
-                    if (aMapLocation.getErrorCode() == 0) {
-                        city = aMapLocation.getCity();
-                        direction = aMapLocation.getDistrict();
-                        for (int i = 0; i < city.length(); i++) {
-                            if (city.substring(i, i + 1).equals("市")) {
-                                city = city.substring(0, i);
-                                bind.location.setText(direction);
-//                                url = "https://api.seniverse.com/v3/weather/now.json?key=zbzp8471lvyfrz1e&location=" + city + "&language=zh-Hans&unit=c";
-//                                showWeather();
-                                break;
-                            }
-                        }
-                    } else {
-                        bind.location.setText("定位失败");
-                        Toast.makeText(AddActivity.this, "错误提示 : " + aMapLocation.getErrorInfo(), Toast.LENGTH_SHORT).show();
-                        Log.e("AmapError", "location Error, ErrCode:"
-                                + aMapLocation.getErrorCode() + ", errInfo:"
-                                + aMapLocation.getErrorInfo());
-                    }
-                }
-            }
-        };
-        if (client != null) {
-            client.setLocationOption(option);
-            client.setLocationListener(listener);
-            client.startLocation();
-        }
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                client.onDestroy();
-            }
-        }, 10000);
     }
 
     private int[] id = null;
@@ -461,27 +316,24 @@ public class AddActivity extends AppCompatActivity {
         }
         bind.recyclerView.setAdapter(adapter);
         number++;
-        adapter.setOnItemClickListener(new SingleAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClickListener(int position) {
-                Single single = list.get(position);
-                Drawable drawable = getResources().getDrawable(single.getImageId()); //获取图片
-                drawable.setBounds(0, 0, 0, 0);  //设置图片参数
-                if (data.equals("mood")) {
-                    //设置到哪个控件的位置()
-                    bind.mood.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, null, null, null);
-                    bind.mood.setText(single.getText());
-                } else if (data.equals("weather")) {
-                    //设置到哪个控件的位置()
-                    bind.weather.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, null, null, null);
-                    bind.weather.setText(single.getText());
-                }
-                //  如果点击了具体的内容,弹出的具体内容会隐藏。同时清空并刷新recyclerView
-                number = 0;
-                list.clear();
-                adapter.notifyDataSetChanged();
-                bind.recyclerView.setVisibility(View.INVISIBLE);
+        adapter.setOnItemClickListener(position -> {
+            Single single = list.get(position);
+            Drawable drawable = getResources().getDrawable(single.getImageId()); //获取图片
+            drawable.setBounds(0, 0, 0, 0);  //设置图片参数
+            if (data.equals("mood")) {
+                //设置到哪个控件的位置()
+                bind.mood.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, null, null, null);
+                bind.mood.setText(single.getText());
+            } else if (data.equals("weather")) {
+                //设置到哪个控件的位置()
+                bind.weather.setCompoundDrawablesRelativeWithIntrinsicBounds(drawable, null, null, null);
+                bind.weather.setText(single.getText());
             }
+            //  如果点击了具体的内容,弹出的具体内容会隐藏。同时清空并刷新recyclerView
+            number = 0;
+            list.clear();
+            adapter.notifyDataSetChanged();
+            bind.recyclerView.setVisibility(View.INVISIBLE);
         });
     }
 }

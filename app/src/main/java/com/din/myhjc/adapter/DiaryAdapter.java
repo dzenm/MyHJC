@@ -7,12 +7,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.din.myhjc.R;
 import com.din.myhjc.activities.AddActivity;
 import com.din.myhjc.content.ListDiary;
 import com.din.myhjc.databases.DataDiary;
+import com.din.myhjc.utils.DateUtil;
 
 import org.litepal.crud.DataSupport;
 
@@ -68,9 +71,9 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     //--------  内容ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        View view;
-        TextView month, day, week, weather, content;
-        ;
+        private View view;
+        private RelativeLayout date;
+        private TextView month, day, week, weather, content;
 
         public ViewHolder(View view) {
 
@@ -81,7 +84,7 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             week = (TextView) view.findViewById(R.id.week);
             weather = (TextView) view.findViewById(R.id.weather);
             content = (TextView) view.findViewById(R.id.content);
-
+            date = (RelativeLayout) view.findViewById(R.id.date);
         }
     }
 
@@ -105,53 +108,36 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             DiaryAdapter.HeadViewHolder holder = new DiaryAdapter.HeadViewHolder(view);
             return holder;
         } else if (viewType == ITEM_TYPE_CONTENT) {
+
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_diary, parent, false);
             final DiaryAdapter.ViewHolder holder = new DiaryAdapter.ViewHolder(view);
 
-            //-------- 单击事件,获取点击的item的position,并将该item的ID传到修改页面,修改页面读取ID之后从litepal获取该行的数据
-            holder.view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    final int position = holder.getAdapterPosition();
-                    ListDiary data = listDiary.get(position - 1);
-                    Intent intent = new Intent(context, AddActivity.class);
-                    intent.putExtra("id", String.valueOf(data.getId()));
-                    intent.putExtra("TAG", "UPDATE");
-                    context.startActivity(intent);
-                }
+            //-------- 单击事件,获取点击的item的position,并将该item的ID传到修改页面
+            holder.view.setOnClickListener(v -> {
+                final int position = holder.getAdapterPosition();
+                ListDiary data = listDiary.get(position - 1);
+                Intent intent = new Intent(context, AddActivity.class);
+                intent.putExtra("id", String.valueOf(data.getId()));
+                intent.putExtra("TAG", "UPDATE");
+                context.startActivity(intent);
             });
+            holder.date.setOnClickListener(v -> {
+                new DateUtil().dateDialog(context, holder.month, holder.day);
+            });
+            holder.view.setOnLongClickListener(v -> {
+                final int position = holder.getAdapterPosition();                // 获取点击的Item的位置
+                final ListDiary data = listDiary.get(position - 1);
+                new android.app.AlertDialog.Builder(context).setTitle("提示").setMessage("是否删除").setCancelable(false).
+                        setPositiveButton("确认", (DialogInterface dialogInterface, int i) -> {
+                            DataSupport.deleteAll(DataDiary.class, "id=?", String.valueOf(data.getId()));   //  删除本地数据库里的数据
+                            //  移除该行在List里存放的数据，RecyclerView及时刷新把该Item删除，刷新Recycler的Item
+                            listDiary.remove(position - 1);
+                            notifyItemRemoved(position);
+                            notifyItemRangeChanged(0, listDiary.size() - 1);
+                        }).setNegativeButton("取消", (DialogInterface dialogInterface, int i) -> {
 
-            //-------- 长按事件,删除该行
-            holder.view.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View view) {
-
-                    //-------- 获取点击的Item的位置
-                    final int position = holder.getAdapterPosition();
-                    final ListDiary data = listDiary.get(position - 1);
-
-                    //-------- 长按出现提示Dialog菜单
-                    new android.app.AlertDialog.Builder(context).setTitle("提示").setMessage("是否删除").setCancelable(false).
-                            setPositiveButton("确认", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-
-                                    //  删除本地数据库里的数据
-                                    DataSupport.deleteAll(DataDiary.class, "id=?", String.valueOf(data.getId()));
-
-                                    //  移除该行在List里存放的数据，RecyclerView及时刷新把该Item删除，刷新Recycler的Item
-                                    listDiary.remove(position - 1);
-                                    notifyItemRemoved(position);
-                                    notifyItemRangeChanged(0, listDiary.size() - 1);
-                                }
-                            }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-
-                        }
-                    }).show();
-                    return true;
-                }
+                }).show();
+                return true;
             });
             return holder;
         } else if (viewType == ITEM_TYPE_NAV) {
@@ -183,14 +169,14 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             vh.week.setText(list.getWeek());
             vh.weather.setText(list.getWeather());
 
-            vh.month.setVisibility(View.VISIBLE);
-            vh.day.setVisibility(View.VISIBLE);
-            if (temp.equals(list.getDay())) {
-                vh.month.setVisibility(View.GONE);
-                vh.day.setVisibility(View.GONE);
-            } else {
-                temp = list.getDay();
-            }
+//            vh.month.setVisibility(View.VISIBLE);
+//            vh.day.setVisibility(View.VISIBLE);
+//            if (temp.equals(list.getDay())) {
+//                vh.month.setVisibility(View.GONE);
+//                vh.day.setVisibility(View.GONE);
+//            } else {
+//                temp = list.getDay();
+//            }
         } else if (holder instanceof DiaryAdapter.NavViewHolder) {
         }
     }
@@ -199,4 +185,5 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public int getItemCount() {
         return headerCount + getContentItemCount() + navCount;
     }
+
 }

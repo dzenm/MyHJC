@@ -177,7 +177,6 @@ public class GuideActivity extends AppCompatActivity {
         //  设置页面跳转效果
 //        bind.guideViewPager.setPageTransformer(true, new DepthPageTransformer());
     }
-
     //-------- 页面跳转动画
 //    public class DepthPageTransformer implements ViewPager.PageTransformer {
 //        private static final float MIN_SCALE = 0.75f;

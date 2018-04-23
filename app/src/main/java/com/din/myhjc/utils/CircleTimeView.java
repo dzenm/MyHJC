@@ -35,7 +35,5 @@ public class CircleTimeView extends View{
         paint.setColor(new Color().parseColor("#f2f2f2"));
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         canvas.drawCircle(getWidth() / 2, getHeight() / 2, getWidth() / 4, paint);
-
     }
-
 }

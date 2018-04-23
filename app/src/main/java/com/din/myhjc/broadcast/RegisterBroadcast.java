@@ -11,8 +11,7 @@ import android.net.ConnectivityManager;
 
 public class RegisterBroadcast {
 
-    private BroadcastReceiver receiver;
-
+    private static BroadcastReceiver receiver;
 
     public void register(Context context) {
         receiver = new NetStatusBroadcast();

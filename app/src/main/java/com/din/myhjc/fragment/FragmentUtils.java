@@ -2,7 +2,6 @@ package com.din.myhjc.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 
 import java.util.ArrayList;
@@ -63,5 +62,4 @@ public class FragmentUtils {
         transaction.show(currentFragment);
         transaction.commit();
     }
-
 }

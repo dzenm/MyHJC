@@ -34,12 +34,9 @@ public class SingleAdapter extends RecyclerView.Adapter<SingleAdapter.ViewHolder
         Single single = list.get(position);
         holder.text.setText(single.getText());
         holder.imageView.setImageResource(single.getImageId());
-        holder.view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (onItemClickListener != null) {
-                    onItemClickListener.onItemClickListener(position);
-                }
+        holder.view.setOnClickListener(v -> {
+            if (onItemClickListener != null) {
+                onItemClickListener.onItemClickListener(position);
             }
         });
     }

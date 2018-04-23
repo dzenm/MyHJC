@@ -4,6 +4,7 @@
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/diary"
+        android:background="@color/MaterialLightGray"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,7 +18,7 @@
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/MaterialLightBlackAlpa"
+                android:background="@color/MaterialLightGray"
                 android:divider="@null"
                 android:dividerHeight="0dp"
                 app:stackFromEnd="true" />
@@ -37,6 +38,6 @@
             app:layout_behavior="@string/float_behaver"
             app:pressedTranslationZ="10dp"
             app:rippleColor="@color/dimgray"
-            app:srcCompat="@drawable/btn_float" />
+            app:srcCompat="@drawable/btn_add" />
     </android.support.design.widget.CoordinatorLayout>
 </layout>

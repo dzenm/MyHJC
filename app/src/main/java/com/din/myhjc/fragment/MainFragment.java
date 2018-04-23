@@ -28,7 +28,7 @@ public class MainFragment extends Fragment {
 
         //-------- 设置toolbar,左上角添加三个横线按钮
         ((AppCompatActivity) getActivity()).setSupportActionBar(bind.toolbar);
-        ((AppCompatActivity) getActivity()).setTitle("");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
         DrawerLayout drawer_layout = (DrawerLayout) getActivity().findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(getActivity(), drawer_layout, bind.toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer_layout.addDrawerListener(toggle);

@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import com.din.myhjc.R;
 import com.din.myhjc.broadcast.RegisterBroadcast;
 import com.din.myhjc.databinding.ActivityRegisterBinding;
+import com.din.myhjc.utils.StatusBarUtils;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
@@ -29,21 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //  使 contentView 延伸到 statusBar
-        Window window = getWindow();
-        //  状态栏透明
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        //  状态栏着色
-        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(Color.TRANSPARENT);
-        window.setNavigationBarColor(Color.TRANSPARENT);
-
-
+        //  去除statusBar
+        StatusBarUtils.removeStatusBar(this);
         bind = DataBindingUtil.setContentView(this, R.layout.activity_register);
 
         setSupportActionBar(bind.toolbar);

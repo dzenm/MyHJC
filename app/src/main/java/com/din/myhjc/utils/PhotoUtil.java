@@ -3,8 +3,10 @@ package com.din.myhjc.utils;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -149,6 +151,7 @@ public class PhotoUtil {
         intent.putExtra("noFaceDetection", true); //关闭人脸检測
         intent.putExtra("return-data", false);//假设设为true则返回bitmap
         intent.putExtra(MediaStore.EXTRA_OUTPUT, destUri);//输出文件
+
         intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
         activity.startActivityForResult(intent, PHOTORESOULT);
     }
@@ -200,7 +203,8 @@ public class PhotoUtil {
     }
 
     /**
-     *  将图片路径转化为Uri
+     * 将图片路径转化为Uri
+     *
      * @param path
      * @return
      */
@@ -299,5 +303,88 @@ public class PhotoUtil {
         // 返回为空
         BitmapFactory.decodeFile(path, opts);
         return BitmapFactory.decodeFile(path, opts);
+    }
+
+
+    /**
+     *  通过Uri删除图片
+     * @param activity
+     * @param uri
+     */
+    public static void deleteUriBitmap(Activity activity, Uri uri) {
+        if (uri.toString().startsWith("content://")) {
+            // content://开头的Uri
+            activity.getContentResolver().delete(uri, null, null);
+        } else {
+            File file = new File(getRealFilePath(activity, uri));
+            if (file.exists() && file.isFile()) {
+                file.delete();
+            }
+        }
+    }
+
+
+    /**
+     *  通过Uri获取图片真实路径
+     * @param context
+     * @param uri
+     * @return
+     */
+    public static String getRealFilePath(final Context context, final Uri uri) {
+        if (null == uri) return null;
+        final String scheme = uri.getScheme();
+        String data = null;
+        if (scheme == null) {
+            data = uri.getPath();
+            if (ContentResolver.SCHEME_FILE.equals(scheme)) {
+                data = uri.getPath();
+            } else if (ContentResolver.SCHEME_CONTENT.equals(scheme)) {
+                Cursor cursor = context.getContentResolver().query(uri, new String[]{MediaStore.Images.ImageColumns.DATA}, null, null, null);
+                if (null != cursor) {
+                    if (cursor.moveToFirst()) {
+                        int index = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+                        if (index > -1) {
+                            data = cursor.getString(index);
+                        }
+                    }
+                }
+                cursor.close();
+            }
+        }
+        return data;
+    }
+
+    /**
+     * 裁剪图片为缩略图
+     *
+     * @param activity
+     * @param imageUri
+     * @return
+     */
+
+    public static Bitmap convertToBitmap(Activity activity, Uri imageUri) {
+
+        String[] filePathColumns = {MediaStore.Images.Media.DATA};
+        Cursor cursor = activity.getContentResolver().query(imageUri, filePathColumns, null, null, null);
+        cursor.moveToFirst();
+        int columnIndex = cursor.getColumnIndex(filePathColumns[0]);
+        String imagePath = cursor.getString(columnIndex);
+        cursor.close();
+        //  设置参数
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true; // 只获取图片的大小信息，而不是将整张图片载入在内存中，避免内存溢出
+        BitmapFactory.decodeFile(imagePath, options);
+        int height = options.outHeight;
+        int width = options.outWidth;
+        int inSampleSize = 2; // 默认像素压缩比例，压缩为原图的1/2
+        int minLen = Math.min(height, width); // 原图的最小边长
+        if (minLen > 100) { // 如果原始图像的最小边长大于100dp（此处单位我认为是dp，而非px）
+            float ratio = (float) minLen / 100.0f; // 计算像素压缩比例
+            inSampleSize = (int) ratio;
+        }
+        options.inJustDecodeBounds = false; // 计算好压缩比例后，这次可以去加载原图了
+        options.inSampleSize = inSampleSize; // 设置为刚才计算的压缩比例
+        Bitmap bitmap = BitmapFactory.decodeFile(imagePath, options); // 解码文件
+        return bitmap;
     }
 }

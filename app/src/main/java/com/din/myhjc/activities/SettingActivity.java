@@ -65,6 +65,8 @@ public class SettingActivity extends AppCompatActivity {
             case android.R.id.home:
                 finish();
                 break;
+            default:
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -102,10 +104,10 @@ public class SettingActivity extends AppCompatActivity {
                 new PhotoUtil().selectPictureFromAlbum(getActivity());
                 flag = "diary";
             } else if (preference == data_output) {
-                new FileUtil().copyDBToSDcrad(DATABASES);
+                new FileUtil().copyDBToSDcrad(getActivity(), DATABASES);
                 Toast.makeText(SettingActivity.this, "导出成功", Toast.LENGTH_SHORT).show();
             } else if (preference == data_input) {
-                new FileUtil().copySDcradToDB(DATABASES);
+                new FileUtil().copySDcradToDB(getActivity(), DATABASES);
                 Toast.makeText(SettingActivity.this, "导入成功", Toast.LENGTH_SHORT).show();
             }
 
@@ -145,7 +147,7 @@ public class SettingActivity extends AppCompatActivity {
             switch (requestCode) {
                 case PhotoUtil.PHOTOZOOM:
                     //  裁剪照片
-                    path = FileUtil.getFolder("temp");
+                    path = FileUtil.getAppFolder("temp");
                     //  生成一个地址用于存放剪辑后的图片
                     if (!TextUtils.isEmpty(path)) {
                         Uri imageUri = PhotoUtil.getPathToUri(path);

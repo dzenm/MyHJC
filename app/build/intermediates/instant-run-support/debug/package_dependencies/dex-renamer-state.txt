@@ -1,4 +1,0 @@
-#Fri Apr 20 20:09:39 CST 2018
-base.0=/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/transforms/dexMerger/debug/30
-renamed.0=classes.dex
-file.0=/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/transforms/dexMerger/debug/30/classes.dex

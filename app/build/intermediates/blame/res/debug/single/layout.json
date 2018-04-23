@@ -56,6 +56,10 @@
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_start.xml"
     },
     {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_table.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_table.xml"
     }

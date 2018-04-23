@@ -28,7 +28,6 @@ public class TransitionView extends RelativeLayout {
         super(context, attrs, defStyleAttr);
         //允许绘制背景，及执行onDraw()方法
 //        setWillNotDraw(false);
-
         init();
     }
 

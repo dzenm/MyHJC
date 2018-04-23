@@ -48,7 +48,7 @@
                 android:layout_margin="@dimen/fab_margin"
                 android:clickable="true"
                 app:fabSize="normal"
-                app:srcCompat="@drawable/btn_float"
+                app:srcCompat="@drawable/btn_add"
                 app:borderWidth="1dp"
                 app:backgroundTint="@color/MaterialAmber"
                 app:rippleColor="@color/dimgray"

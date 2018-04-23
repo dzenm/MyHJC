@@ -51,7 +51,6 @@ public class AddNoteActivity extends AppCompatActivity {
             bind.title.setText(dataNote.getTitle());
             bind.content.setText(dataNote.getContent());
         }
-
     }
 
     public void onClick(View view) {

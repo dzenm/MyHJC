@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/097e47914cccfc39811f30309925a3e9/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.3.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/264757c3142cb6dfa3629426767cb34b/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:17:1-31:12
@@ -24,20 +24,20 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/dinzhenyan/.gradl
 MERGED from [cn.bmob.android:bmob-sdk:3.5.8] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/bmob-sdk-3.5.8.aar/546b09eba33aa0fbedf84508093c27db/AndroidManifest.xml:2:1-16:12
 MERGED from [org.litepal.android:core:1.5.1] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/core-1.5.1.aar/e93c0a1433e80e11827087854804bd9c/AndroidManifest.xml:2:1-16:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/072d0ae60d2d329899764dbc21841f0c/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
-INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
 	package
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:3:5-28
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-72:12
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:1-77:12
 		INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:2:11-69
@@ -110,7 +110,7 @@ ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifes
 	android:name
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:39:22-81
 application
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:41:5-71:19
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:41:5-75:19
 MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/5af2dfbc9444f614e659e7d88ac33b5a/AndroidManifest.xml:25:5-29:19
 MERGED from [com.github.limxing:Android-PromptDialog:1.1.3] /Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/Android-PromptDialog-1.1.3.aar/f3bda12859ad2ddfec585a50ca361bab/AndroidManifest.xml:11:5-15:19
@@ -162,65 +162,69 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/dinzhenyan/.gradle/cac
 	android:name
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:42:9-45
 activity#com.din.myhjc.activities.SplashActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:49:9-56:20
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:49:9-57:20
 	android:theme
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:51:13-47
 	android:name
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:50:13-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:52:13-55:29
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
 ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:53:17-69
 	android:name
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:54:17-77
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:54:27-74
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:55:27-74
 activity#com.din.myhjc.activities.StartActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:57:9-62
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:58:9-62
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:57:19-59
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:58:19-59
 activity#com.din.myhjc.activities.MainActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:58:9-61
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:59:9-61
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:58:19-58
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:59:19-58
 activity#com.din.myhjc.activities.GuideActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:59:9-62
-	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:59:19-59
-activity#com.din.myhjc.activities.LoginActivity
 ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:60:9-62
 	android:name
 		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:60:19-59
+activity#com.din.myhjc.activities.LoginActivity
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:61:9-62
+	android:name
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:61:19-59
 activity#com.din.myhjc.activities.RegisterActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:61:9-65
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:62:9-65
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:61:19-62
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:62:19-62
 activity#com.din.myhjc.activities.SettingActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:62:9-64
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:63:9-64
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:62:19-61
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:63:19-61
 activity#com.din.myhjc.activities.AddActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:63:9-65:58
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:64:9-66:58
 	android:windowSoftInputMode
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:65:13-55
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:66:13-55
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:64:13-51
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:65:13-51
 activity#com.din.myhjc.activities.AddNoteActivity
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:66:9-64
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:67:9-64
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:66:19-61
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:67:19-61
 activity#com.din.myhjc.fragment.Memo
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:67:9-60
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:68:9-51
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:67:19-48
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:68:19-48
 meta-data#com.amap.api.v2.apikey
-ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:68:9-70:64
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:70:9-72:64
 	android:value
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:70:13-61
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:72:13-61
 	android:name
-		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:69:13-50
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:71:13-50
+activity#com.din.myhjc.activities.ProfileActivity
+ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:74:9-73
+	android:name
+		ADDED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml:74:19-61
 uses-sdk
 INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/AndroidManifest.xml

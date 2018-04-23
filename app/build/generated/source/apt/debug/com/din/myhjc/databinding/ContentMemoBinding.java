@@ -18,7 +18,7 @@ public class ContentMemoBinding extends android.databinding.ViewDataBinding  {
     }
     // views
     @NonNull
-    private final android.support.constraint.ConstraintLayout mboundView0;
+    private final android.widget.RelativeLayout mboundView0;
     // variables
     // values
     // listeners
@@ -27,7 +27,7 @@ public class ContentMemoBinding extends android.databinding.ViewDataBinding  {
     public ContentMemoBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
         final Object[] bindings = mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds);
-        this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

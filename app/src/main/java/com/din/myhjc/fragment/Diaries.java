@@ -36,16 +36,11 @@ public class Diaries extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         bind = DataBindingUtil.inflate(inflater, R.layout.content_diary, container, false);
-
         //  下拉刷新颜色和刷新处理事件
         bind.swipeRefersh.setColorSchemeResources(R.color.MaterialCycn);
-        bind.swipeRefersh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                swipe_Refersh();
-                new RegisterBroadcast().register(getActivity());
-
-            }
+        bind.swipeRefersh.setOnRefreshListener(()->{
+            swipe_Refersh();
+            new RegisterBroadcast().register(getActivity());
         });
         bind.floatButton.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), AddActivity.class);
@@ -58,27 +53,21 @@ public class Diaries extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        //  背景设置
-        Bitmap bgBitmap = new FileUtil().readPhoto("Photo", "DiaryBackgroung");
-        if (bgBitmap != null) {
-            BitmapDrawable drawable = new BitmapDrawable(getActivity().getResources(), bgBitmap);
-            bind.diary.setBackground(drawable);
-        } else {
-            bind.diary.setBackgroundResource(R.drawable.diary);
-        }
+//        //  背景设置
+//        Bitmap bgBitmap = new FileUtil().readPhoto("Photo", "DiaryBackgroung");
+//        if (bgBitmap != null) {
+//            BitmapDrawable drawable = new BitmapDrawable(getActivity().getResources(), bgBitmap);
+//            bind.diary.setBackground(drawable);
+//        } else {
+//            bind.diary.setBackgroundResource(R.drawable.diary);
+//        }
         if (getUserVisibleHint()) {
             //-------- RecyclerView设置Adapter和布局
             bind.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-            bind.recyclerView.setAdapter(new DiaryAdapter(list, getActivity()));
+            DiaryAdapter adapter = new DiaryAdapter(list, getActivity());
+            bind.recyclerView.setAdapter(adapter);
             init();
         }
-    }
-
-    //  取消注册网络广播
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        new RegisterBroadcast().unregister(getActivity());
     }
 
     //  下拉刷新进行的操作
@@ -104,7 +93,7 @@ public class Diaries extends Fragment {
             String dateTime = new DateUtil().DateToSimple(String.valueOf(dataDiary.getDatetime()));
             list.add(new ListDiary(dataDiary.getId(),
                     dateTime.substring(0, 4),
-                    "/" + dateTime.substring(5, 7) + "月",
+                    "-" + dateTime.substring(5, 7) + "月",
                     dateTime.substring(8, 10),
                     dataDiary.getContents(),
                     dataDiary.getWeek(),

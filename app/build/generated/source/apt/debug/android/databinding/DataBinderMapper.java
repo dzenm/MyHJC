@@ -22,6 +22,8 @@ class DataBinderMapper  {
                     return com.din.myhjc.databinding.ContentMainBinding.bind(view, bindingComponent);
                 case com.din.myhjc.R.layout.activity_login:
                     return com.din.myhjc.databinding.ActivityLoginBinding.bind(view, bindingComponent);
+                case com.din.myhjc.R.layout.activity_profile:
+                    return com.din.myhjc.databinding.ActivityProfileBinding.bind(view, bindingComponent);
                 case com.din.myhjc.R.layout.content_memo:
                     return com.din.myhjc.databinding.ContentMemoBinding.bind(view, bindingComponent);
                 case com.din.myhjc.R.layout.activity_main:
@@ -91,6 +93,12 @@ class DataBinderMapper  {
             case -237232145: {
                 if(tag.equals("layout/activity_login_0")) {
                     return com.din.myhjc.R.layout.activity_login;
+                }
+                break;
+            }
+            case 366786799: {
+                if(tag.equals("layout/activity_profile_0")) {
+                    return com.din.myhjc.R.layout.activity_profile;
                 }
                 break;
             }
