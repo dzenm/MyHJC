@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_memo.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_memo.xml"
-    },
-    {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/diary_fragment.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/diary_fragment.xml"
     },
     {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_note.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_note.xml"
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/table_fragment.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/table_fragment.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/memo_fragment.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/memo_fragment.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/diary_recycler.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/diary_recycler.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_note.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_add_note.xml"
-    },
-    {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/drawer_main.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/drawer_main.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_setting.xml",
@@ -32,20 +32,32 @@
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_main.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_main.xml"
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_content.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/main_content.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_register.xml"
     },
     {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_include.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/main_include.xml"
+    },
+    {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_add.xml"
     },
     {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_diary.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_diary.xml"
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_fragment.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/main_fragment.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/note_fragment.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/note_fragment.xml"
+    },
+    {
+        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
+        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
@@ -54,13 +66,5 @@
     {
         "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_start.xml",
         "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_start.xml"
-    },
-    {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/activity_profile.xml"
-    },
-    {
-        "merged": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_table.xml",
-        "source": "/Users/dinzhenyan/Documents/Android/MyHJC/app/src/main/res/layout/content_table.xml"
     }
 ]

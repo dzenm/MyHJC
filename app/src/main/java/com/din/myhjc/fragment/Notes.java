@@ -13,7 +13,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +23,7 @@ import com.din.myhjc.activities.AddNoteActivity;
 import com.din.myhjc.adapter.NoteAdapter;
 import com.din.myhjc.content.ListNote;
 import com.din.myhjc.databases.DataNote;
-import com.din.myhjc.databinding.ContentNoteBinding;
+import com.din.myhjc.databinding.NoteFragmentBinding;
 import com.din.myhjc.utils.FileUtil;
 
 import org.litepal.crud.DataSupport;
@@ -34,14 +33,14 @@ import java.util.List;
 
 public class Notes extends Fragment {
 
-    private ContentNoteBinding bind;
+    private NoteFragmentBinding bind;
     private List<ListNote> list;
     private static final String SHAREFERENCES = "com.din.myhjc_preferences";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        bind = DataBindingUtil.inflate(inflater, R.layout.content_note, container, false);
+        bind = DataBindingUtil.inflate(inflater, R.layout.note_fragment, container, false);
 
         //  设置toolbar,去除标题
         ((AppCompatActivity) getActivity()).setSupportActionBar(bind.toolbar);

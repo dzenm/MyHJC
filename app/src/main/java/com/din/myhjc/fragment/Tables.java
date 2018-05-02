@@ -10,25 +10,25 @@ import com.din.myhjc.R;
 import com.din.myhjc.adapter.TableAdapter;
 import com.din.myhjc.content.ListTable;
 import com.din.myhjc.databases.DataDiary;
-import com.din.myhjc.databinding.ContentTableBinding;
+import com.din.myhjc.databinding.TableFragmentBinding;
+
 import org.litepal.crud.DataSupport;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class Tables extends Fragment {
 
     private List<ListTable> listTables = new ArrayList<ListTable>();
-    private ContentTableBinding bind;
+    private TableFragmentBinding bind;
     private TableAdapter adapter;
     private int[] count = new int[7];
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        bind = DataBindingUtil.inflate(inflater, R.layout.content_table, container, false);
+        bind = DataBindingUtil.inflate(inflater, R.layout.table_fragment, container, false);
 
         //-------- RecyclerView设置Layout和Adapter
 //        calendar();

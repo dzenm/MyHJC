@@ -5,7 +5,6 @@ import android.databinding.DataBindingUtil;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Size;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
@@ -78,7 +77,7 @@ public class AddActivity extends AppCompatActivity {
     //  添加界面初始化
     private void initAdd() {
         //  设置当前时间的日期
-        bind.date.setText(dateUtil.DateToSimple().substring(0, 10));
+        bind.date.setText(dateUtil.dateToSimple().substring(0, 10));
         bind.location.setText("定位中...");
         new LocationUtils().startLocation(this, bind.location);
     }
@@ -92,7 +91,7 @@ public class AddActivity extends AppCompatActivity {
         List<DataDiary> datas = DataSupport.where("id=?", Id).find(DataDiary.class);
         String dateTime;
         for (DataDiary data : datas) {
-            dateTime = new DateUtil().DateToSimple(String.valueOf(data.getDatetime()));
+            dateTime = new DateUtil().dateToSimple(String.valueOf(data.getDatetime()));
             bind.content.setText(data.getContents());
             bind.date.setText(dateTime.substring(0, 10));
             bind.weather.setText(data.getWeather());
@@ -144,21 +143,15 @@ public class AddActivity extends AppCompatActivity {
                     if (TAG.equals("AddActivity")) {
                         saveLocalData().save();
                         promptDialog.showSuccess("添加成功");
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                startMainActivity();
-                            }
+                        new Handler().postDelayed(() -> {
+                            startMainActivity();
                         }, 500);
                     } else {
                         if (focus) {
                             saveLocalData().updateAll("id=?", Id);
                             promptDialog.showSuccess("更新成功");
-                            new Handler().postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    startMainActivity();
-                                }
+                            new Handler().postDelayed(() -> {
+                                startMainActivity();
                             }, 500);
                         } else {
                             //  如果此时文本框没有获取焦点,则点击之后,EditText获得焦点
@@ -198,11 +191,10 @@ public class AddActivity extends AppCompatActivity {
         //  本地数据
         week = bind.date.getText().toString();
         String time = Calendar.HOUR_OF_DAY + ":" + Calendar.MINUTE;
-
         DataDiary dataDiary = new DataDiary();
         dataDiary.setContents(bind.content.getText().toString());
         dataDiary.setDatetime(new DateUtil().dateToLong(bind.date.getText().toString() + time));
-        dataDiary.setWeek(new DateUtil().DateToWeek(week));
+        dataDiary.setWeek(new DateUtil().dateToWeek(week));
         dataDiary.setWeather(bind.weather.getText().toString());
         dataDiary.setMood(bind.mood.getText().toString());
         dataDiary.setLocation(bind.location.getText().toString());

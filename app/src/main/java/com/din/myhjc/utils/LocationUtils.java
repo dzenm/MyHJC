@@ -10,6 +10,12 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
 /**
  * Created by dinzhenyan on 2018/4/21.
  */
@@ -75,8 +81,8 @@ public class LocationUtils {
         return listener;
     }
 
-    //  获取天气
-//    private void showWeather(){
+//    // 获取天气
+//    private void showWeather() {
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
@@ -92,29 +98,24 @@ public class LocationUtils {
 //            }
 //        }).start();
 //    }
-//
-//    private void getWeather(final String data){
-//             try {
-//                    //  将所有数据放在一个jsonObject中
-//                    JSONObject jsonObject = new JSONObject(data);
-//                    //  取出为results的key
-//                    String results = jsonObject.getString("results");
-//                    //  该key对应的值是一个数组,因此使用数组存储
-//                    JSONArray jsonArray = new JSONArray(results);
-//                    //  取出json数组中json对象为0的下标
-//                    JSONObject second = jsonArray.getJSONObject(0);
-//                    //  取出key为now的值
-//                    JSONObject now = second.getJSONObject("now");
-//                    //  取出key为text的值
-//                    String text = now.getString("text");
+
+    private void getWeather(final String data) {
+        try {
+            //  将所有数据放在一个jsonObject中
+            JSONObject jsonObject = new JSONObject(data);
+            //  取出为results的key
+            String results = jsonObject.getString("results");
+            //  该key对应的值是一个数组,因此使用数组存储
+            JSONArray jsonArray = new JSONArray(results);
+            //  取出json数组中json对象为0的下标
+            JSONObject second = jsonArray.getJSONObject(0);
+            //  取出key为now的值
+            JSONObject now = second.getJSONObject("now");
+            //  取出key为text的值
+            String text = now.getString("text");
 //                    bind.weather.setText(text);
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//            }
-//        });
-//
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
 }

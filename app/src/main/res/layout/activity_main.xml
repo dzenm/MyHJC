@@ -8,14 +8,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:openDrawer="start">
-        <include layout="@layout/diary_fragment" />
+        <include layout="@layout/main_include" />
 
         <android.support.design.widget.NavigationView
             android:id="@+id/navView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:headerLayout="@layout/nav_header"
+            app:headerLayout="@layout/main_draw_header"
             app:menu="@menu/nav_content" />
     </android.support.v4.widget.DrawerLayout>
 </layout>

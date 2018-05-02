@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MaterialLightBlueAlpa"
+        android:orientation="vertical"
+        android:paddingTop="25dp" android:tag="layout/activity_register_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/toolbarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_text"
+                android:textColor="@color/MaterialWhite"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/setHeadPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/headphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_white"
+            android:focusable="true"
+            android:id="@+id/content"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/setHeadPhoto"
+            android:orientation="vertical">
+
+            <com.din.myhjc.utils.ClearEditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edit_users"
+                android:drawablePadding="10dp"
+                android:hint="@string/user_edit"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray79" />
+
+            <com.din.myhjc.utils.ClearEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edit_passwords"
+                android:drawablePadding="10dp"
+                android:hint="@string/password_edit"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray79" />
+
+            <com.din.myhjc.utils.ClearEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edit_phones"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_edit"
+                android:maxLength="11"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray79" />
+
+            <com.din.myhjc.utils.ClearEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/edit_emails"
+                android:drawablePadding="10dp"
+                android:hint="@string/email_edit"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:layout_below="@+id/content"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/register_text"
+            android:textColor="@color/MaterialWhite" />
+
+        <com.din.myhjc.utils.TransitionView
+            android:id="@+id/animalView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+         

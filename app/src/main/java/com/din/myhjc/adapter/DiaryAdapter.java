@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -26,72 +25,77 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     private List<ListDiary> listDiary;
     private Context context;
-    private List<Integer> list = new ArrayList<>();
 
+    // item类型
+    private static final int ITEM_TYPE_HEADER = 10;
+    private static final int ITEM_TYPE_CONTENT = 11;
+    private static final int ITEM_TYPE_NAV = 12;
 
-    //--------  item类型
-    private static final int ITEM_TYPE_HEADER = 0;
-    private static final int ITEM_TYPE_CONTENT = 1;
-    private static final int ITEM_TYPE_NAV = 2;
-
-    //--------  头部、底部View个数
-    private static int navCount = 1;
-    private static int headerCount = 1;
-
-    //-------- Adapter添加类型为DataBean的List数据 ---------------
+    // Adapter添加类型为DataBean的List数据 ---------------
     public DiaryAdapter(List<ListDiary> listDiary, Context context) {
         this.context = context;
         this.listDiary = listDiary;
     }
 
-    //--------  内容长度
-    public int getContentItemCount() {
-        return listDiary.size();
-    }
-
-    //--------  判断当前item类型
+    // 判断当前item类型
     public int getItemViewType(int position) {
-        int dataItemCount = getContentItemCount();
-        if (headerCount != 0 && position < headerCount) {
-            return ITEM_TYPE_HEADER;
-        } else if (navCount != 0 && position >= (headerCount + dataItemCount)) {
-            return ITEM_TYPE_NAV;
-        } else {
-            return ITEM_TYPE_CONTENT;
-        }
+        return listDiary.get(position).getItemType();
     }
 
     //--------  头部ViewHolder
     public class HeadViewHolder extends RecyclerView.ViewHolder {
+        private TextView date;
+
         public HeadViewHolder(View view) {
             super(view);
+            date = (TextView) itemView.findViewById(R.id.date);
+            // 通过接口实现判断View的Tag是否需要吸附
+            view.setTag(true);
+        }
+
+        // 绑定头部数据
+        public void bindHeadData(ListDiary listDiary) {
+            date.setText(listDiary.getYear() + listDiary.getMonth() + listDiary.getMonth());
         }
     }
 
-    //--------  内容ViewHolder
+    // 内容ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
-
         private View view;
-        private RelativeLayout date;
-        private TextView month, day, week, weather, content;
+        private TextView week, weather, content;
 
         public ViewHolder(View view) {
-
             super(view);
             this.view = view;
-            month = (TextView) view.findViewById(R.id.month);
-            day = (TextView) view.findViewById(R.id.day);
             week = (TextView) view.findViewById(R.id.week);
             weather = (TextView) view.findViewById(R.id.weather);
             content = (TextView) view.findViewById(R.id.content);
-            date = (RelativeLayout) view.findViewById(R.id.date);
+            // 通过接口实现判断View的Tag是否需要吸附
+            view.setTag(false);
+        }
+
+        // 绑定中间数据
+        public void bindContentData(ListDiary listDiary) {
+            content.setText(listDiary.getContents());
+            week.setText(listDiary.getWeek());
+            weather.setText(listDiary.getWeather());
         }
     }
 
-    //--------  底部ViewHolder
+    // 底部ViewHolder
     public class NavViewHolder extends RecyclerView.ViewHolder {
+        private TextView nav;
+
         public NavViewHolder(View view) {
             super(view);
+            nav = (TextView) view.findViewById(R.id.nav);
+            // 通过接口实现判断View的Tag是否需要吸附
+            view.setTag(false);
+        }
+
+        // 绑定尾部数据
+        public void bindNavData(ListDiary listDiary) {
+            nav.setText(listDiary.getNav());
         }
     }
 
@@ -104,15 +108,15 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
      */
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (viewType == ITEM_TYPE_HEADER) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.diary_header, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.diary_recycler_header, parent, false);
             DiaryAdapter.HeadViewHolder holder = new DiaryAdapter.HeadViewHolder(view);
             return holder;
         } else if (viewType == ITEM_TYPE_CONTENT) {
 
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_diary, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.diary_recycler, parent, false);
             final DiaryAdapter.ViewHolder holder = new DiaryAdapter.ViewHolder(view);
 
-            //-------- 单击事件,获取点击的item的position,并将该item的ID传到修改页面
+            // 单击事件,获取点击的item的position,并将该item的ID传到修改页面
             holder.view.setOnClickListener(v -> {
                 final int position = holder.getAdapterPosition();
                 ListDiary data = listDiary.get(position - 1);
@@ -120,9 +124,6 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 intent.putExtra("id", String.valueOf(data.getId()));
                 intent.putExtra("TAG", "UPDATE");
                 context.startActivity(intent);
-            });
-            holder.date.setOnClickListener(v -> {
-                new DateUtil().dateDialog(context, holder.month, holder.day);
             });
             holder.view.setOnLongClickListener(v -> {
                 final int position = holder.getAdapterPosition();                // 获取点击的Item的位置
@@ -141,14 +142,12 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             });
             return holder;
         } else if (viewType == ITEM_TYPE_NAV) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.diary_nav, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.diary_recycler_nav, parent, false);
             DiaryAdapter.NavViewHolder holder = new DiaryAdapter.NavViewHolder(view);
             return holder;
         }
         return null;
     }
-
-    private String temp = "0000";
 
     /**
      * 绑定数据
@@ -157,33 +156,21 @@ public class DiaryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
      * @param position 子级View的个数
      */
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+        ListDiary list = listDiary.get(position);
         if (holder instanceof DiaryAdapter.HeadViewHolder) {
+            HeadViewHolder vh = (HeadViewHolder) holder;
+            vh.bindHeadData(list);
         } else if (holder instanceof DiaryAdapter.ViewHolder) {
             ViewHolder vh = (ViewHolder) holder;
-            int currentPosition = position - headerCount;
-            ListDiary list = listDiary.get(currentPosition);
-
-            vh.month.setText(list.getMonth());
-            vh.day.setText(list.getDay());
-            vh.content.setText(list.getContents());
-            vh.week.setText(list.getWeek());
-            vh.weather.setText(list.getWeather());
-
-//            vh.month.setVisibility(View.VISIBLE);
-//            vh.day.setVisibility(View.VISIBLE);
-//            if (temp.equals(list.getDay())) {
-//                vh.month.setVisibility(View.GONE);
-//                vh.day.setVisibility(View.GONE);
-//            } else {
-//                temp = list.getDay();
-//            }
+            vh.bindContentData(list);
         } else if (holder instanceof DiaryAdapter.NavViewHolder) {
+            NavViewHolder vh = (NavViewHolder) holder;
+            vh.bindNavData(list);
         }
     }
 
     //  获取Item总数
     public int getItemCount() {
-        return headerCount + getContentItemCount() + navCount;
+        return listDiary.size();
     }
-
 }

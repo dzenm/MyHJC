@@ -35,8 +35,7 @@
 # 指定不去忽略非公共库的类
 -dontskipnonpubliclibraryclasses
 
-# 这句话能够使我们的项目混淆后产生映射文件
-# 包含有类名->混淆后类名的映射关系
+# 混淆过程打印日志的级别
 -verbose
 
 # 指定不去忽略非公共库的类成员
@@ -45,12 +44,15 @@
 # 不做预校验，preverify是proguard的四个步骤之一，Android不需要preverify，去掉这一步能够加快混淆速度。
 -dontpreverify
 
+# dex打包时会自己做优化操作
+# 不使用优化方案
+#-dontoptimize
+
 # 保留Annotation不混淆
 -keepattributes *Annotation*,InnerClasses
 
 # 避免混淆泛型
 -keepattributes Signature,*Annotation*
-
 
 # 抛出异常时保留代码行号
 -keepattributes SourceFile,LineNumberTable

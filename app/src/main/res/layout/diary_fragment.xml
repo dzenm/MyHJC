@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/diary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/MaterialLightGray">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefersh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/MaterialLightGray"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            app:backgroundTint="@color/MaterialAmber"
+            app:borderWidth="1dp"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            app:layout_behavior="@string/float_behaver"
+            app:pressedTranslationZ="10dp"
+            app:rippleColor="@color/dimgray"
+            app:srcCompat="@drawable/btn_add" />
+    </android.support.design.widget.CoordinatorLayout>
 </layout>

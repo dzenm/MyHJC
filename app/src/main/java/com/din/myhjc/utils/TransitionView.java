@@ -32,7 +32,7 @@ public class TransitionView extends RelativeLayout {
     }
 
     private void init() {
-        View rootView = inflate(getContext(), R.layout.transtion_view, this);
+        View rootView = inflate(getContext(), R.layout.logo_transtion_view, this);
 
         spread = rootView.findViewById(R.id.spread);
         line = rootView.findViewById(R.id.line);

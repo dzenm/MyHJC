@@ -4,7 +4,7 @@
             "outputFile": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/res/values-v16/values-v16.xml",
+                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0edf74d9b4c9fdec98f49da178f2b077/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/2d10dc34d9f53de02ec7243e8ad8fcbd/res/values-v16/values-v16.xml",
+                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/236f63211a7dad219d5fdd9945053a6e/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

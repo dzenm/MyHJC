@@ -117,7 +117,7 @@
             android:gravity="center"
             android:onClick="onClick"
             android:layout_below="@+id/content"
-            android:background="@drawable/bg_btn"
+            android:background="@drawable/btn_bg"
             android:text="@string/login"
             android:textColor="@color/MaterialWhite" />
 

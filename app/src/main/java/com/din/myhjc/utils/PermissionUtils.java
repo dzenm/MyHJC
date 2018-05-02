@@ -44,7 +44,6 @@ public class PermissionUtils {
                 //  检测是否有指定的权限
                 int permission = ActivityCompat.checkSelfPermission(
                         activity, PERMISSIONS_DANGEROUS[requestCode[i]]);
-
                 //  如果包管理没有该权限,动态的申请权限
                 if (permission != PackageManager.PERMISSION_GRANTED) {
                     ActivityCompat.requestPermissions(activity, PERMISSIONS_DANGEROUS, requestCode[i]);

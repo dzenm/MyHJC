@@ -4,7 +4,7 @@
             "outputFile": "/Users/dinzhenyan/Documents/Android/MyHJC/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/06f54b17bcac49a282695d8c6127a095/res/values-v12/values-v12.xml",
+                    "source": "/Users/dinzhenyan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0edf74d9b4c9fdec98f49da178f2b077/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

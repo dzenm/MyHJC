@@ -53,7 +53,7 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.ViewHolder> 
 
     //-------- RecyclerView点击事件
     public TableAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_table, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.table_recycler, parent, false);
         final ViewHolder holder = new ViewHolder(view);
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.ViewHolder> 
                 final int position = holder.getAdapterPosition();
                 final ListTable table = tables.get(position);
                 //-------- 长按出现提示Dialog菜单
-                View dialog = View.inflate(context, R.layout.dialog_check, null);
+                View dialog = View.inflate(context, R.layout.table_dialog, null);
                 TextView title = (TextView) dialog.findViewById(R.id.title);
                 TextView content = (TextView) dialog.findViewById(R.id.content);
                 title.setText(table.getTitle().toString());

@@ -23,7 +23,7 @@ public class SingleAdapter extends RecyclerView.Adapter<SingleAdapter.ViewHolder
 
     @Override
     public SingleAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_single, null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.add_mood, null);
         ViewHolder holder = new ViewHolder(view);
         return holder;
     }

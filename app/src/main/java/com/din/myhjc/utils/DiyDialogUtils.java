@@ -29,7 +29,7 @@ public class DiyDialogUtils {
 
         //  获取layout
         LayoutInflater locationInflater = activity.getLayoutInflater();
-        View dialog = locationInflater.inflate(R.layout.dialog_input, null);
+        View dialog = locationInflater.inflate(R.layout.add_dialog, null);
         //  获取控件ID
         ClearEditText editText = (ClearEditText) dialog.findViewById(R.id.locationText);
         TextView diyText = (TextView) dialog.findViewById(R.id.diyText);
@@ -57,7 +57,7 @@ public class DiyDialogUtils {
         promptDialog = new PromptDialog(activity);
         //  获取layout
         LayoutInflater locationInflater = activity.getLayoutInflater();
-        View dialog = locationInflater.inflate(R.layout.dialog_input, null);
+        View dialog = locationInflater.inflate(R.layout.add_dialog, null);
         //  获取控件ID
         ClearEditText editText = (ClearEditText) dialog.findViewById(R.id.locationText);
         TextView diyText = (TextView) dialog.findViewById(R.id.diyText);

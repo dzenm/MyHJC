@@ -20,7 +20,7 @@ public class DateUtil {
      * @param weekDate
      * @return
      */
-    public String DateToWeek(String weekDate) {
+    public String dateToWeek(String weekDate) {
         String[] WEEK = {"星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
         String week = null;
         try {
@@ -65,7 +65,7 @@ public class DateUtil {
      *
      * @return
      */
-    public String DateToSimple() {
+    public String dateToSimple() {
         //-------- 获取时间戳
         Date dateSimple = new Date();
         //-------- 设置日期格式
@@ -82,7 +82,7 @@ public class DateUtil {
      * @param dates
      * @return
      */
-    public String DateToSimple(String dates) {
+    public String dateToSimple(String dates) {
 
         //  设置时间格式
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-ddHH:mm");
@@ -99,7 +99,7 @@ public class DateUtil {
      *
      * @return
      */
-    public String SimpleToDate(String dates) {
+    public String simpleToDate(String dates) {
 
         //-------- 设置日期格式
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-ddHH:mm");
@@ -114,7 +114,7 @@ public class DateUtil {
      *
      * @param context
      */
-    public void DateTimeDialog(final Context context, final TextView date, final TextView time) {
+    public void dateTimeDialog(final Context context, final TextView date, final TextView time) {
 
         Calendar calendarDate = Calendar.getInstance();
         new DatePickerDialog(context, new DatePickerDialog.OnDateSetListener() {

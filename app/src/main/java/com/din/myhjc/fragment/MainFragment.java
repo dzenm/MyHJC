@@ -1,7 +1,6 @@
 package com.din.myhjc.fragment;
 
 import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -12,19 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.din.myhjc.R;
-import com.din.myhjc.databinding.ContentMainBinding;
+import com.din.myhjc.databinding.MainFragmentBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainFragment extends Fragment {
 
-    private ContentMainBinding bind;
+    private MainFragmentBinding bind;
     private FragmentUtils fragmentUtils;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        bind = DataBindingUtil.inflate(inflater, R.layout.content_main, container, false);
+        bind = DataBindingUtil.inflate(inflater, R.layout.main_fragment, container, false);
 
         //-------- 设置toolbar,左上角添加三个横线按钮
         ((AppCompatActivity) getActivity()).setSupportActionBar(bind.toolbar);

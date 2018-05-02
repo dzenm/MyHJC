@@ -37,15 +37,15 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FetchUserInfoListener;
 
 /**
- * _____________________
- * |________    _________|
- * |  |
- * |  |
- * |  |
- * |  |
- * __  |  |
- * \  \|  |
- * \____/
+ *   _____________________
+ *  |________    _________|
+ *           |  |
+ *           |  |
+ *           |  |
+ *           |  |
+ *       __  |  |
+ *       \  \|  |
+ *        \____/
  */
 public class MainActivity extends AppCompatActivity {
 
